@@ -12,3 +12,10 @@ services:
     volumes:
       - ./data:/data/
     command: minio server /data --console-address ":9001"
+
+# to start minio server, run this command
+# minio server /data
+
+# there will be console address which can be used to manage objects via web-based GUI
+# to specify which console address should be open at, use flag --console-address
+# otherwise, minio will randomly select available port
